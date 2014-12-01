@@ -31,10 +31,10 @@ margin: -6px 0;
 width: 8px;
 height: 25px;
 }
-.caption{
+.caption,{
 	width: 900px;
 	height: 30px;
-	background: black;
+	background-color: black;
 	opacity: 0.5;
 	border: 1px solid grey;
 	position: absolute;

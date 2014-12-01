@@ -29,30 +29,40 @@
             </div>
 			<div class="item">
               <img src="img/1.jpg">
+			   <div class="caption">
+				</div>
               <div class="carousel-caption">
                 Slide 1
               </div>
             </div>
             <div class="item">
               <img src="img/2.jpg">
+			  <div class="caption">
+				</div>
               <div class="carousel-caption">
                 Slide 2
               </div>
             </div>
              <div class="item">
               <img src="img/3.jpg">
+			  <div class="caption">
+				</div>
               <div class="carousel-caption">
                 SLide 3
               </div>
             </div>
              <div class="item">
               <img src="img/4.jpg">
+			  <div class="caption">
+				</div>
               <div class="carousel-caption">
                 Slide 4
               </div>
             </div>
              <div class="item">
               <img src="img/5.jpg">
+			  <div class="caption">
+				</div>
               <div class="carousel-caption">
                 Slide 5
               </div>
@@ -61,7 +71,7 @@
           </div>
 
           <!-- Controls -->
-          <div class="caption">
+          <div class="captio">
               
           </div>
 
@@ -69,8 +79,8 @@
 
                    <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active act"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1" class="act"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
@@ -99,19 +109,21 @@
         <script src="js/main.js"></script>
 		<script>
 			$(document).ready(function(){
-			$(".caption").hide();
-			$(".carousel-caption").hide();
+			
+		
+			
 			$(".carousel-control").click(function(){
-				$(".caption").show(500).slideUp(500).slideDown(700);
-				$(".carousel-caption").show(500).slideUp(700).fadeIn(700);
+				$(".caption").slideUp(500).slideDown(700);
+				$(".carousel-caption").slideUp(700).fadeIn(700);
 			});
-			if($(".active")){
-			$(".caption").hide();
-			}
+			
 			$('.carousel').carousel({
-			interval:false});
+			
+			interval:2000});
+		
 			});
 		
 		</script>
+		
     </body>
 </html>
